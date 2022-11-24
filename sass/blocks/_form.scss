@@ -3,6 +3,12 @@
     box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
     border-radius: 29px;
     height: 58px;
+
+
+    &--active{
+        transition: all 0.3s ease;
+        box-shadow: 0px 17px 42px rgba(243, 170, 11, 0.747);
+    }
 }
 
 .form__label{
@@ -32,11 +38,6 @@
     &::placeholder{
         color: #bbb;
     }
-}
-
-.form__button{
-    font-weight: 700;
-    color: #FFFFFF;
 }
 
 .header__img{

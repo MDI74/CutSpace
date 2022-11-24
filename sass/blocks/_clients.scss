@@ -1,0 +1,11 @@
+.clients{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.clients__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 95px;
+}
