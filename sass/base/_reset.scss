@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+	margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+input, button {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+}
+
+input:focus, button:focus{
+    outline: none;
+}
+
+ul li {
+	list-style: none;
+    text-decoration: none;
+}
+
+a, a:link, a:visited  {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover  {
+    text-decoration: none;
+}
