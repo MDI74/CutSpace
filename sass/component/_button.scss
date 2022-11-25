@@ -5,5 +5,31 @@
     padding: 18px 37px;
 
     font-weight: 700;
-    color: #FFFFFF !important;
+    color: #FFFFFF;
+
+
+    &--white {
+        background-color: #FFFFFF;
+        color: $black-color;
+    }
+
+    &--play{
+        position: relative;
+        padding-left: 50px;
+
+        &::before{
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            content: '';
+            display: block;
+            width: 12px;
+            height: 12px;
+            background-image: url("./../img/icons/play.svg");
+            background-size: initial;
+            background-repeat: no-repeat;
+        }
+    }
 }

@@ -1,0 +1,36 @@
+.card-customer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 40px 88px;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+
+    text-align: center;
+
+    transition: background-color 0.2s ease, color 0.3s ease;
+
+    &:hover{
+        background-color: $orange-color;
+        color: #FFFFFF;
+
+        .button{
+            background-color: #FFFFFF;
+            color: $orange-color;
+        }
+    }
+}
+
+.card-customer__title {
+
+}
+
+.card-customer__text {
+    width: 364px;
+    margin-bottom: 20px;
+}
+

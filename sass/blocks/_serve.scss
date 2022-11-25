@@ -1,0 +1,20 @@
+.serve {
+    padding: 60px 0;
+    background-color: beige;
+}
+
+.serve__heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+.serve__title {
+    margin-bottom: 10px;
+}
+
+.serve__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+}
+
