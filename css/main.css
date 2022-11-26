@@ -185,7 +185,8 @@ img {
   margin-bottom: 20px; }
 
 .objects__button {
-  margin-top: 40px; }
+  margin-top: 40px;
+  color: #FFFFFF; }
 
 .title {
   font-weight: 700;
@@ -228,7 +229,7 @@ img {
 
 .cta {
   padding-top: 74px;
-  padding-bottom: 72px; }
+  padding-bottom: 144px; }
 
 .cta__block {
   background: #58BEBF;
@@ -270,8 +271,19 @@ img {
   column-gap: 20px; }
 
 .serve {
-  padding: 60px 0;
-  background-color: beige; }
+  position: relative;
+  padding-bottom: 110px; }
+  .serve::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #F5F6FA;
+    position: absolute;
+    top: -46%;
+    left: 0;
+    bottom: 50%;
+    z-index: -1; }
 
 .serve__heading {
   text-align: center;
@@ -296,17 +308,146 @@ img {
   box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
   text-align: center;
-  transition: background-color 0.2s ease, color 0.3s ease; }
+  transition: background-color 0.2s ease-in, color 0.3s ease-in, fill 0.9s ease-in; }
   .card-customer:hover {
     background-color: #F78434;
     color: #FFFFFF; }
     .card-customer:hover .button {
       background-color: #FFFFFF;
       color: #F78434; }
+    .card-customer:hover .card-customer__icon {
+      fill: white;
+      transition: fill 0.2s ease-in; }
+
+.card-customer__icon {
+  fill: #F78434;
+  margin-bottom: 15px; }
 
 .card-customer__text {
   width: 364px;
   margin-bottom: 20px; }
+
+.advantage {
+  padding-bottom: 110px; }
+
+.advantage__heading {
+  margin-bottom: 58px;
+  text-align: center; }
+
+.advantage__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 35px; }
+
+.advantage-item {
+  text-align: center; }
+  .advantage-item:hover .advantage-item__icon circle {
+    fill: #F78434; }
+  .advantage-item:hover .advantage-item__icon path, .advantage-item:hover .advantage-item__icon ellipse {
+    fill: #FFFFFF; }
+
+.advantage-item__img {
+  margin-bottom: 15px; }
+
+.advantage-item__title {
+  margin-bottom: 2px;
+  font-size: 28px; }
+
+.advantage-item__icon circle {
+  fill: rgba(88, 190, 191, 0.2); }
+.advantage-item__icon path, .advantage-item__icon ellipse {
+  fill: #58BEBF; }
+
+.testimonials {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.testimonials__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px; }
+  .testimonials__heading p {
+    color: #606060; }
+
+.testimonials__title {
+  max-width: 452px; }
+
+.testimonials__subtitle {
+  max-width: 398px; }
+
+.testimonials__row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px; }
+  .testimonials__row::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 80px;
+    height: 80px;
+    background-image: url("./../img/testimonials/design-element.svg");
+    background-repeat: no-repeat; }
+
+.card-testimonial {
+  background: #FFFFFF;
+  border-radius: 0px 0px 5px 5px;
+  overflow: hidden;
+  max-width: 350px; }
+  .card-testimonial:hover {
+    box-shadow: 0px 10px 52px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s ease-in; }
+    .card-testimonial:hover .card-testimonial__btn-play {
+      transform: translateY(0);
+      opacity: 1;
+      transition: transform 0.3s ease-in, opacity 0.3s ease-in; }
+
+.card-testimonial__img-wrapper {
+  position: relative; }
+
+.card-testimonial__img {
+  margin-bottom: 31px; }
+
+.card-testimonial__body {
+  padding: 0 30px; }
+  .card-testimonial__body p {
+    max-width: 275px; }
+  .card-testimonial__body p:last-child {
+    padding-bottom: 30px; }
+
+.card-testimonial__name {
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 15px; }
+
+.card-testimonial__city {
+  color: #F78434;
+  font-weight: 400; }
+  .card-testimonial__city--blue {
+    color: #58BEBF; }
+
+.card-testimonial__btn-play {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  transform: translateY(50%);
+  opacity: 0;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in; }
+  .card-testimonial__btn-play svg circle {
+    fill: #FFFFFF;
+    transition: fill 0.2s ease-in; }
+  .card-testimonial__btn-play svg path {
+    fill: #F78434;
+    transition: fill 0.2s ease-in; }
+  .card-testimonial__btn-play svg:hover circle {
+    fill: #F78434; }
+  .card-testimonial__btn-play svg:hover path {
+    fill: #FFFFFF; }
 
 .button {
   display: inline-block;
@@ -333,5 +474,8 @@ img {
       background-image: url("./../img/icons/play.svg");
       background-size: initial;
       background-repeat: no-repeat; }
+  .button--serve {
+    background-color: #FFFFFF;
+    color: #F78434; }
 
 /*# sourceMappingURL=main.css.map */

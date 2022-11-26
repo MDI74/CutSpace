@@ -12,7 +12,7 @@
 
     text-align: center;
 
-    transition: background-color 0.2s ease, color 0.3s ease;
+    transition: background-color 0.2s ease-in, color 0.3s ease-in, fill 0.9s ease-in;
 
     &:hover{
         background-color: $orange-color;
@@ -22,15 +22,25 @@
             background-color: #FFFFFF;
             color: $orange-color;
         }
+
+        .card-customer__icon {
+            fill: white;
+            transition: fill 0.2s ease-in;
+        }
+        
     }
 }
 
-.card-customer__title {
-
+.card-customer__icon {
+    fill: $orange-color;
+    margin-bottom: 15px;
 }
+
 
 .card-customer__text {
     width: 364px;
     margin-bottom: 20px;
 }
+
+
 

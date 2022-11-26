@@ -32,4 +32,9 @@
             background-repeat: no-repeat;
         }
     }
+
+    &--serve{
+        background-color: #FFFFFF;
+        color: $orange-color;
+    }
 }
