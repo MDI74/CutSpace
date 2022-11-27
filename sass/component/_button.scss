@@ -1,16 +1,25 @@
 .button{
     display: inline-block;
-    background: $orange-color;
+    background-color: $orange-color;
     border-radius: 29px;
     padding: 18px 37px;
 
     font-weight: 700;
     color: #FFFFFF;
 
+    &:hover{
+        background-color: #f38c42;
+        transition: background-color 0.2s ease-in;
+    }
 
     &--white {
         background-color: #FFFFFF;
         color: $black-color;
+
+        &:hover{
+            background-color: #d1cbcb;
+            transition: background-color 0.2s ease-in;
+        }
     }
 
     &--play{

@@ -14,6 +14,8 @@
 
     transition: background-color 0.2s ease-in, color 0.3s ease-in, fill 0.9s ease-in;
 
+    color: $black-color;
+
     &:hover{
         background-color: $orange-color;
         color: #FFFFFF;

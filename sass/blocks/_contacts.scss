@@ -1,0 +1,37 @@
+.contacts {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 55px;
+    background-image: url('./../img/contacts/bg.svg');
+    background-size: cover;
+    color: #FFFFFF;
+
+
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+
+
+        width: 743px;
+        height: 547px;
+        background: url('./../img/contacts/girl.svg');
+
+    }
+}
+
+.contacts__title {
+    margin-bottom: 15px;
+    max-width: 352px;
+}
+
+.contacts__info {
+
+    p{
+        max-width: 342px;
+        margin-bottom: 30px;
+    }
+
+}

@@ -4,6 +4,7 @@
     border-radius: 0px 0px 5px 5px;
     overflow: hidden;
     max-width: 350px;
+    color: $black-color;
 
     &:hover{
         box-shadow: 0px 10px 52px rgba(0, 0, 0, 0.08);
@@ -22,10 +23,11 @@
 .card-testimonial__img-wrapper{
     position: relative;
 }
+
 .card-testimonial__img {
     margin-bottom: 31px;
-
 }
+
 .card-testimonial__body {
     padding: 0 30px;
     
@@ -37,8 +39,8 @@
         padding-bottom: 30px;
         
     }
-
 }
+
 .card-testimonial__name {
     font-weight: 700;
     font-size: 18px;
@@ -58,7 +60,7 @@
 .card-testimonial__btn-play {
     position: absolute;
     right: 20px;
-    bottom: 20px;
+    bottom: 40px;
     transform: translateY(50%);
     opacity: 0;
     transition: transform 0.3s ease-in, opacity 0.3s ease-in;
