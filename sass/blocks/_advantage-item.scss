@@ -1,37 +1,35 @@
 .advantage-item {
     text-align: center;
 
-
     &:hover .advantage-item__icon{
-            circle {
-                fill: $orange-color;
-                
-            }
+        circle {
+            fill: $orange-color;
+            
+        }
 
-            path, ellipse {
-                fill: #FFFFFF;
-            }
-    }
-}
-.advantage-item__img {
-    margin-bottom: 15px;
-}
-.advantage-item__title {
-    margin-bottom: 2px;
-    font-size: 28px;
-
-}
-
-.advantage-item__icon{
-
-    circle {
-        fill: rgba(88, 190, 191, 0.2);
-
+        path, ellipse {
+            fill: $white-color;
+        }
     }
 
-    path, ellipse {
-        fill: #58BEBF;
+    &__img {
+        margin-bottom: 15px;
     }
+
+    &__title {
+        margin-bottom: 2px;
+        font-size: 28px;
+    }
+
+    &__icon {
+        circle {
+            fill: rgba(88, 190, 191, 0.2);
     
+        }
+    
+        path, ellipse {
+            fill: #58BEBF;
+        }
+    }
 
 }

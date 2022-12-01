@@ -1,17 +1,15 @@
 .advantage {
     padding-bottom: 110px;
+
+    &__heading {
+        margin-bottom: 58px;
+        text-align: center;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 35px;
+    }
 }
-
-.advantage__heading {
-    margin-bottom: 58px;
-    text-align: center;
-}
-
-.advantage__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 35px;
-}
-
-

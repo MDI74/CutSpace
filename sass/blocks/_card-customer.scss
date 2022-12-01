@@ -6,7 +6,7 @@
 
     padding: 40px 88px;
 
-    background-color: #FFFFFF;
+    background-color: $white-color;
     box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
 
@@ -18,31 +18,28 @@
 
     &:hover{
         background-color: $orange-color;
-        color: #FFFFFF;
+        color: $white-color;
 
         .button{
-            background-color: #FFFFFF;
+            background-color: $white-color;
             color: $orange-color;
         }
 
         .card-customer__icon {
-            fill: white;
+            fill: $white-color;
             transition: fill 0.2s ease-in;
         }
         
     }
+
+    &__icon {
+        fill: $orange-color;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        width: 364px;
+        margin-bottom: 20px;
+    }
 }
-
-.card-customer__icon {
-    fill: $orange-color;
-    margin-bottom: 15px;
-}
-
-
-.card-customer__text {
-    width: 364px;
-    margin-bottom: 20px;
-}
-
-
 

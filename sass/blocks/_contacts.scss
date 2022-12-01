@@ -4,7 +4,7 @@
     padding-bottom: 55px;
     background-image: url('./../img/contacts/bg.svg');
     background-size: cover;
-    color: #FFFFFF;
+    color: $white-color;
 
 
     &::before{
@@ -12,7 +12,7 @@
         display: block;
         position: absolute;
         bottom: 0;
-        left: 50%;
+        left: 42%;
 
 
         width: 743px;
@@ -20,18 +20,18 @@
         background: url('./../img/contacts/girl.svg');
 
     }
-}
 
-.contacts__title {
-    margin-bottom: 15px;
-    max-width: 352px;
-}
-
-.contacts__info {
-
-    p{
-        max-width: 342px;
-        margin-bottom: 30px;
+    &__title{
+        margin-bottom: 15px;
+        max-width: 352px;
     }
 
+    &__info{
+
+        p{
+            max-width: 342px;
+            margin-bottom: 30px;
+        }
+    }
 }
+

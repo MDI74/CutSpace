@@ -2,7 +2,6 @@
     position: relative;
     padding-bottom: 110px;
 
-
     &::before{
         content: '';
         display: block;
@@ -16,20 +15,20 @@
         bottom: 50%;
         z-index: -1;
     }
-}
 
-.serve__heading {
-    text-align: center;
-    margin-bottom: 45px;
-}
-.serve__title {
-    margin-bottom: 10px;
-}
+    &__heading {
+        text-align: center;
+        margin-bottom: 45px;
+    }
 
-.serve__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 30px;
-}
+    &__title {
+        margin-bottom: 10px;
+    }
 
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 30px;
+    }
+}
